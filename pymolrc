@@ -1,0 +1,40 @@
+set orthoscopic, on
+#set antialias, 5 # for high resolution ray.
+set cartoon_discrete_colors, on
+
+#---for rendering
+set ray_shadows = 1
+set ray_opaque_background = 0
+set ray_trace_color, black
+set ray_trace_mode, 1
+set ray_trace_disco_factor, 1.0
+set ray_trace_gain, 0.1
+
+#*Label setting
+set label_color, black
+set label_outline_color, white
+set label_font_id, 7 
+set label_size, 25 
+
+#bg_color white
+
+#*Initial window size
+#viewport 2220, 1500
+#
+
+run /Users/siida/Dropbox/forPymol/my_scripts/show_aroma.py
+run /Users/siida/Dropbox/forPymol/my_scripts/show_CD1_atoms.py
+run /Users/siida/Dropbox/forPymol/my_scripts/show_VIL_rotamericstat.py
+run /Users/siida/Dropbox/forPymol/my_scripts/show_stacking.py
+run /Users/siida/Dropbox/forPymol/my_scripts/remove_cosolv.py
+
+run /Users/siida/Dropbox/forPymol/src_pymol_scripts/drawBoundingBox.py
+run /Users/siida/Dropbox/forPymol/src_pymol_scripts/CenterOfMass.py
+run /Users/siida/Dropbox/forPymol/src_pymol_scripts/extra_fit.py
+run /Users/siida/Dropbox/forPymol/src_pymol_scripts/flatten_obj.py 
+run /Users/siida/Dropbox/forPymol/src_pymol_scripts/cgo_arrow.py
+run /Users/siida/Dropbox/forPymol/src_pymol_scripts/dipole_peptide_bonds.py
+run /Users/siida/Dropbox/forPymol/src_pymol_scripts/interfaceResidues.py
+run /Users/siida/Dropbox/forPymol/src_pymol_scripts/modevectors.py
+run /Users/siida/Dropbox/forPymol/src_pymol_scripts/spectrum_states.py
+run /Users/siida/Dropbox/forPymol/src_pymol_scripts/renumber.py
