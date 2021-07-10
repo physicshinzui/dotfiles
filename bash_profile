@@ -1,6 +1,10 @@
+#Hide warning on mac
+export BASH_SILENCE_DEPRECATION_WARNING=1
+
+alias reload=". ~/.bash_profile"
 
 alias ls='ls -Gh'
-alias ll="ls -l"
+alias ll="ls -rtl"
 alias la="ls -a"
 
 alias ana='cd /Users/siida/Dropbox/01code'
@@ -10,7 +14,6 @@ alias res='cd /Users/siida/Dropbox/00_Research/'
 
 alias mtbm='sshfs hpci002668@login.t3.gsic.titech.ac.jp:/gs/hs0/hp170020/siida /Users/siida/tbm_mountplace'
 alias tbm4="ssh hpci002668@login.t3.gsic.titech.ac.jp -Y"
-alias atom='/Applications/Atom.app/Contents/MacOS/Atom'
 
 alias zuno='ssh iida@192.168.1.4'
 alias mzun='sshfs iida@192.168.1.4:/home/iida /Users/siida/zuno_mountplace'
@@ -18,7 +21,6 @@ alias mzundisk='sshfs iida@192.168.1.4:/disk41/iida /Users/siida/zunodisk_mountp
 alias m2='sshfs iida@192.168.1.4:/disk35/mashi01/CryptoSite/ /Users/siida/zunodisk_mountplace_masi'
 
 alias fpymol='/usr/local/Cellar/pymol/2.3.0/bin/pymol'
-
 
 export PS1="\[\e[34m\]\@ \[\e[33m\]\u@ \[\e[32m\]\w\e[0m\n\$ "
 

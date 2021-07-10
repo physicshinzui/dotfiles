@@ -1,0 +1,4 @@
+set border lw 3 lc rgb "black"
+set xlabel font "Helvetica, 20"
+set ylabel font "Helvetica, 20"
+set tics font "Helvetica, 15"
